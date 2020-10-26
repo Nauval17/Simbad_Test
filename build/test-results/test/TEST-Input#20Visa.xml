@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Input Visa" tests="18" skipped="13" failures="2" errors="0" timestamp="2020-10-26T09:43:27" hostname="NAUVAL-PC" time="7.31">
+  <properties/>
+  <testcase name="User open website &quot;https://www.phptravels.net/&quot;" classname="Input Visa" time="4.944"/>
+  <testcase name="User is at home page" classname="Input Visa" time="0.085"/>
+  <testcase name="User choose to login" classname="Input Visa" time="0.638"/>
+  <testcase name="User input credential &quot;user@phptravels.com&quot; &quot;demouser&quot;" classname="Input Visa" time="0.279">
+    <failure message="org.openqa.selenium.InvalidElementStateException: invalid element state&#10;  (Session info: chrome=86.0.4240.111)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NAUVAL-PC', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\NAUVAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58969}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 07249bab2328d48617c3b9e221d4428e" type="org.openqa.selenium.InvalidElementStateException">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=86.0.4240.111)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAUVAL-PC', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\NAUVAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58969}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 07249bab2328d48617c3b9e221d4428e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at pageobjects.WebPageObject.typeOn(WebPageObject.java:35)
+	at demo.pages.LoginPage.inputEmail(LoginPage.java:13)
+	at demo.stepdefinition.HomeStepDefinition.userInputCredential(HomeStepDefinition.java:27)
+	at ✽.User input credential &quot;user@phptravels.com&quot; &quot;demouser&quot;(file:///C:/Users/Nauval%20Shafiq/IdeaProjects/Simbad_Test/src/test/resources/features/Problem_B.feature:8)
+</failure>
+  </testcase>
+  <testcase name="User click login" classname="Input Visa" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="User is at home page" classname="Input Visa" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="User is at home page" classname="Input Visa" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="User input origin country &quot;Indonesia&quot;" classname="Input Visa" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="User input destination country &quot;Australia&quot;" classname="Input Visa" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="User input date &quot;01-12-2020&quot;" classname="Input Visa" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="User click submit" classname="Input Visa" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase name="User is at visa detail form page" classname="Input Visa" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase name="User input name &quot;Demo&quot; &quot;User&quot;" classname="Input Visa" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="User input email &quot;user@phptravels.com&quot;" classname="Input Visa" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="User input contact number &quot;0812000000&quot;" classname="Input Visa" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="User submit data" classname="Input Visa" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="User see confirmation page" classname="Input Visa" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="classMethod" classname="Input Visa" time="11.194">
+    <failure message="org.openqa.selenium.InvalidElementStateException: invalid element state&#10;  (Session info: chrome=86.0.4240.111)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NAUVAL-PC', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\NAUVAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58969}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 07249bab2328d48617c3b9e221d4428e" type="org.openqa.selenium.InvalidElementStateException">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=86.0.4240.111)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAUVAL-PC', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\NAUVAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58969}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 07249bab2328d48617c3b9e221d4428e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at pageobjects.WebPageObject.typeOn(WebPageObject.java:35)
+	at demo.pages.LoginPage.inputEmail(LoginPage.java:13)
+	at demo.stepdefinition.HomeStepDefinition.userInputCredential(HomeStepDefinition.java:27)
+	at ✽.User input credential &quot;user@phptravels.com&quot; &quot;demouser&quot;(file:///C:/Users/Nauval%20Shafiq/IdeaProjects/Simbad_Test/src/test/resources/features/Problem_B.feature:8)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+@Web @Visa_1
+Scenario Outline: Input Visa                                 ?[90m# src/test/resources/features/Problem_B.feature:27?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 17127
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 26, 2020 5:43:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

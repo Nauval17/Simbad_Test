@@ -18,7 +18,7 @@ public class WebDriverInstance {
         options.setCapability(CapabilityType.PLATFORM_NAME, Platform.WINDOWS);
         options.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
         driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
+        driver.manage().window();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 

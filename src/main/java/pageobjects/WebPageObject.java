@@ -11,10 +11,10 @@ import static demo.drivers.WebDriverInstance.driver;
 
 public class WebPageObject {
 
-    public boolean waitUntilEnabled(By id){
+    public void waitUntilEnabled(By id){
         WebDriverWait wait = new WebDriverWait(driver,30);
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(id));
-        return element.isEnabled();
+        element.isEnabled();
     }
 
     public boolean waitUntilDisplayed(By id){
@@ -43,5 +43,25 @@ public class WebPageObject {
 
     public void openUrl(String url){
         driver.get(url);
+    }
+
+    public String textGetter(By locator){
+        WebElement element = driver.findElement(locator);
+        return element.getText();
+    }
+
+    public void chooseMultipleID(String args, By locator){
+        List<WebElement> elements = driver.findElements(locator);
+        for(WebElement key:elements){
+            if(key.getText().equalsIgnoreCase(args)){
+                key.click();
+                break;
+            }
+        }
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

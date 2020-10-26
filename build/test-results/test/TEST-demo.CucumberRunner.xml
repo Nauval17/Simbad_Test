@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demo.CucumberRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="NAUVAL-PC" time="0.0">
+  <properties/>
+  <system-out><![CDATA[  ?[32mGiven ?[0m?[32mUser open website ?[0m?[32m?[1m"https://www.phptravels.net/"?[0m      ?[90m# demo.stepdefinition.HomeStepDefinition.userOpenWebsite(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mUser is at home page?[0m                                  ?[90m# demo.stepdefinition.HomeStepDefinition.userIsAtHomePage()?[0m
+  ?[32mWhen ?[0m?[32mUser choose to login?[0m                                  ?[90m# demo.stepdefinition.HomeStepDefinition.userChooseToLogin()?[0m
+  ?[31mAnd ?[0m?[31mUser input credential ?[0m?[31m?[1m"user@phptravels.com"?[0m?[31m ?[0m?[31m?[1m"demouser"?[0m ?[90m# demo.stepdefinition.HomeStepDefinition.userInputCredential(java.lang.String,java.lang.String)?[0m
+      ?[31morg.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=86.0.4240.111)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAUVAL-PC', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\NAUVAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58969}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 07249bab2328d48617c3b9e221d4428e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at pageobjects.WebPageObject.typeOn(WebPageObject.java:35)
+	at demo.pages.LoginPage.inputEmail(LoginPage.java:13)
+	at demo.stepdefinition.HomeStepDefinition.userInputCredential(HomeStepDefinition.java:27)
+	at âœ½.User input credential "user@phptravels.com" "demouser"(file:///C:/Users/Nauval%20Shafiq/IdeaProjects/Simbad_Test/src/test/resources/features/Problem_B.feature:8)
+?[0m
+  ?[36mAnd ?[0m?[36mUser click login?[0m                                       ?[90m# demo.stepdefinition.HomeStepDefinition.userClickLogin()?[0m
+  ?[36mThen ?[0m?[36mUser is at home page?[0m                                  ?[90m# demo.stepdefinition.HomeStepDefinition.userIsAtHomePage()?[0m
+  ?[36mGiven ?[0m?[36mUser is at home page?[0m                                 ?[90m# demo.stepdefinition.HomeStepDefinition.userIsAtHomePage()?[0m
+  ?[36mWhen ?[0m?[36mUser input origin country ?[0m?[36m?[1m"Indonesia"?[0m                 ?[90m# demo.stepdefinition.VisaStepDefinition.userInputOriginCountry(java.lang.String)?[0m
+  ?[36mAnd ?[0m?[36mUser input destination country ?[0m?[36m?[1m"Australia"?[0m             ?[90m# demo.stepdefinition.VisaStepDefinition.userInputDestinationCountry(java.lang.String)?[0m
+  ?[36mAnd ?[0m?[36mUser input date ?[0m?[36m?[1m"01-12-2020"?[0m                           ?[90m# demo.stepdefinition.VisaStepDefinition.userInputDate(java.lang.String)?[0m
+  ?[36mAnd ?[0m?[36mUser click submit?[0m                                      ?[90m# demo.stepdefinition.VisaStepDefinition.userClickSubmit()?[0m
+  ?[36mThen ?[0m?[36mUser is at visa detail form page?[0m                      ?[90m# demo.stepdefinition.VisaStepDefinition.userIsAtVisaDetailFormPage()?[0m
+  ?[36mWhen ?[0m?[36mUser input name ?[0m?[36m?[1m"Demo"?[0m?[36m ?[0m?[36m?[1m"User"?[0m                         ?[90m# demo.stepdefinition.VisaStepDefinition.userInputName(java.lang.String,java.lang.String)?[0m
+  ?[36mAnd ?[0m?[36mUser input email ?[0m?[36m?[1m"user@phptravels.com"?[0m                 ?[90m# demo.stepdefinition.VisaStepDefinition.userInputEmail(java.lang.String)?[0m
+  ?[36mAnd ?[0m?[36mUser input contact number ?[0m?[36m?[1m"0812000000"?[0m                 ?[90m# demo.stepdefinition.VisaStepDefinition.userInputContactNumber(java.lang.String)?[0m
+  ?[36mAnd ?[0m?[36mUser submit data?[0m                                       ?[90m# demo.stepdefinition.VisaStepDefinition.userSubmitData()?[0m
+  ?[36mThen ?[0m?[36mUser see confirmation page?[0m                            ?[90m# demo.stepdefinition.VisaStepDefinition.userSeeConfirmationPage()?[0m
+
+    Embedding Proof of Failure [image/png 90473 bytes]
+
+]]></system-out>
+  <system-err><![CDATA[?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://reports.cucumber.io/docs/cucumber-jvm?[0m                 ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+]]></system-err>
+</testsuite>
