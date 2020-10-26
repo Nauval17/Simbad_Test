@@ -22,6 +22,9 @@ Feature: Visa
     And User input contact number "<phoneNumber>"
     And User submit data
     Then User see confirmation page
+    When User go to invoice detail page
+    And User see invoice detail
+    Then User compare data "<firstName>" "<lastName>" "<phoneNumber>" "<origin>" "<destination>" "<date>"
     Examples:
       | origin    | destination | date       | firstName | lastName | email               | phoneNumber |
       | Indonesia | Australia   | 01-12-2020 | Demo      | User     | user@phptravels.com | 0812000000  |

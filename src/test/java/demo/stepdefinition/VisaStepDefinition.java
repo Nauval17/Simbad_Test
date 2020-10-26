@@ -1,16 +1,18 @@
 package demo.stepdefinition;
 
+import demo.pages.VisaInvoicePage;
+import org.junit.Assert;
+
 import demo.pages.VisaPage;
 import demo.pages.WebHomepage;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 
 public class VisaStepDefinition {
     VisaPage visaPage = new VisaPage();
     WebHomepage homepage = new WebHomepage();
+    VisaInvoicePage invoicePage = new VisaInvoicePage();
 
     @When("User input origin country {string}")
     public void userInputOriginCountry(String origin) {
@@ -62,5 +64,27 @@ public class VisaStepDefinition {
 
     @Then("User see confirmation page")
     public void userSeeConfirmationPage() {
+        Assert.assertTrue(invoicePage.onConfirmPage());
+    }
+
+    @When("User go to invoice detail page")
+    public void userGoToInvoiceDetailPage() {
+        invoicePage.clickInvoice();
+    }
+
+    @And("User see invoice detail")
+    public void userSeeInvoiceDetail() {
+        Assert.assertTrue(invoicePage.onInvoicePage());
+    }
+
+    @Then("User compare data {string} {string} {string} {string} {string} {string}")
+    public void userCompareData(String firstName, String lastName, String phoneNumber,
+                                String origin, String destination, String date) {
+        Assert.assertEquals(invoicePage.confirmFirstName(),firstName);
+        Assert.assertEquals(invoicePage.confirmLastName(),lastName);
+        Assert.assertEquals(invoicePage.confirmPhoneNumber(),phoneNumber);
+        Assert.assertEquals(invoicePage.confirmOrigin(),origin);
+        Assert.assertEquals(invoicePage.confirmDestination(),destination);
+        Assert.assertEquals(invoicePage.confirmDate(),date);
     }
 }

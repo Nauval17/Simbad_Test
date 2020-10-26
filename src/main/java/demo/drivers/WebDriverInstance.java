@@ -14,7 +14,7 @@ public class WebDriverInstance {
 
     public static void initialize(){
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("incognito");
+//        options.addArguments("incognito");
         options.setCapability(CapabilityType.PLATFORM_NAME, Platform.WINDOWS);
         options.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
         driver = new ChromeDriver(options);
