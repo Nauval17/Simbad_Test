@@ -1,6 +1,7 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -34,6 +35,13 @@ public class WebPageObject {
         WebElement type = driver.findElement(id);
         type.clear();
         type.sendKeys(text);
+    }
+
+    public void submitText(By id, String text){
+        waitUntilDisplayed(id);
+        WebElement type = driver.findElement(id);
+        type.clear();
+        type.sendKeys(text,Keys.ENTER);
     }
 
     public boolean checkElement(By locator){

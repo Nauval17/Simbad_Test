@@ -18,8 +18,10 @@ public class LoginPage implements HomeLocator {
     public void clickSubmit(){
         pageObject.clickOn(LOGIN_BUTTON);
     }
-    public void onAccount(){
+    public void onAccount() {
         pageObject.waitUntilDisplayed(HOME_BUTTON);
+    }
+     public void clickHome(){
         pageObject.clickOn(HOME_BUTTON);
     }
 }

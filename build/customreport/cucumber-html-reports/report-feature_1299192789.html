@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>root project 'Simbad_Test'</td>
         <td>0</td>
-      <td>26 Oct 2020, 17:43</td>
+      <td>26 Oct 2020, 17:58</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Visa</td>
-          <td      class="passed"    >3</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >13</td>
+          <td      class="passed"    >17</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">17</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="5949394600">5.949</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="24532123700">24.532</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -175,7 +175,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">Visa</span>
 
@@ -193,12 +193,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">5.942</span>
+  <span class="lead-duration duration">17.597</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Background</span>
   <span class="name"></span>
 
@@ -209,16 +209,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -228,7 +228,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -236,7 +236,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">User open website <span class="argument">&quot;https://www.phptravels.net/&quot;</span></span>
 
-  <span class="lead-duration duration">4.942</span>
+  <span class="lead-duration duration">5.944</span>
 
 </div>
 
@@ -263,7 +263,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">User is at home page</span>
 
-  <span class="lead-duration duration">0.085</span>
+  <span class="lead-duration duration">0.090</span>
 
 </div>
 
@@ -290,7 +290,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">User choose to login</span>
 
-  <span class="lead-duration duration">0.637</span>
+  <span class="lead-duration duration">1.496</span>
 
 </div>
 
@@ -313,11 +313,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">User input credential <span class="argument">&quot;user@phptravels.com&quot;</span> <span class="argument">&quot;demouser&quot;</span></span>
 
-  <span class="lead-duration duration">0.277</span>
+  <span class="lead-duration duration">3.494</span>
 
 </div>
 
@@ -325,40 +325,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>org.openqa.selenium.InvalidElementStateException:</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.InvalidElementStateException: invalid element state
-  (Session info: chrome=86.0.4240.111)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NAUVAL-PC', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\NAUVAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58969}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 07249bab2328d48617c3b9e221d4428e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
-	at pageobjects.WebPageObject.typeOn(WebPageObject.java:35)
-	at demo.pages.LoginPage.inputEmail(LoginPage.java:13)
-	at demo.stepdefinition.HomeStepDefinition.userInputCredential(HomeStepDefinition.java:27)
-	at &#10045;.User input credential &quot;user@phptravels.com&quot; &quot;demouser&quot;(file:///C:/Users/Nauval%20Shafiq/IdeaProjects/Simbad_Test/src/test/resources/features/Problem_B.feature:8)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -374,11 +340,11 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">User click login</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">6.521</span>
 
 </div>
 
@@ -401,11 +367,11 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">User is at home page</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.050</span>
 
 </div>
 
@@ -446,12 +412,12 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
 </div>
 
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">6.934</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Input Visa</span>
 
@@ -462,11 +428,11 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details  in ">
+  <div id="element-3" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -478,13 +444,13 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
 
     </div>
 
-    <div id="before-5" class="inner-level collapse collapsable-details ">
+    <div id="before-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">demo.hooks.WebHook.initializeWebDriver()</span>
 
-  <span class="lead-duration duration">3.647</span>
+  <span class="lead-duration duration">3.678</span>
 
           </div>
 
@@ -501,9 +467,9 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -513,15 +479,15 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
 
   </div>
 
-  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">User is at home page</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.047</span>
 
 </div>
 
@@ -544,11 +510,11 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">User input origin country <span class="argument">&quot;Indonesia&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.631</span>
 
 </div>
 
@@ -571,11 +537,11 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">User input destination country <span class="argument">&quot;Australia&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.445</span>
 
 </div>
 
@@ -598,11 +564,11 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">User input date <span class="argument">&quot;01-12-2020&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.774</span>
 
 </div>
 
@@ -625,11 +591,11 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">User click submit</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.125</span>
 
 </div>
 
@@ -652,11 +618,11 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">User is at visa detail form page</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.059</span>
 
 </div>
 
@@ -679,11 +645,11 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">User input name <span class="argument">&quot;Demo&quot;</span> <span class="argument">&quot;User&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.333</span>
 
 </div>
 
@@ -706,11 +672,11 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">User input email <span class="argument">&quot;user@phptravels.com&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.353</span>
 
 </div>
 
@@ -733,11 +699,11 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">User input contact number <span class="argument">&quot;0812000000&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.197</span>
 
 </div>
 
@@ -760,11 +726,11 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">User submit data</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.966</span>
 
 </div>
 
@@ -787,7 +753,7 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">User see confirmation page</span>
 
@@ -818,7 +784,7 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -830,13 +796,13 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
 
     </div>
 
-    <div id="after-7" class="inner-level collapse collapsable-details ">
+    <div id="after-6" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">demo.hooks.WebHook.quitWebDriver(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.321</span>
+  <span class="lead-duration duration">0.658</span>
 
           </div>
 
@@ -845,21 +811,6 @@ Session ID: 07249bab2328d48617c3b9e221d4428e
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
-      <a>Proof of Failure</a>
-      <a href="embeddings/embedding_-626277220.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-8" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-626277220.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>

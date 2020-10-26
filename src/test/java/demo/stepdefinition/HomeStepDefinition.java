@@ -22,16 +22,19 @@ public class HomeStepDefinition {
     }
 
     @And("User input credential {string} {string}")
-    public void userInputCredential(String email, String password) {
+    public void userInputCredential(String email, String password) throws InterruptedException {
         Assert.assertTrue(loginPage.onLoginPage());
+        Thread.sleep(3000);
         loginPage.inputEmail(email);
         loginPage.inputPassword(password);
     }
 
     @And("User click login")
-    public void userClickLogin() {
+    public void userClickLogin() throws InterruptedException {
         loginPage.clickSubmit();
         loginPage.onAccount();
+        Thread.sleep(3000);
+        loginPage.clickHome();
     }
 
     @Given("User open website {string}")

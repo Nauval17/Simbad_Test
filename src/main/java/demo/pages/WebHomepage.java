@@ -50,7 +50,7 @@ public class WebHomepage implements HomeLocator {
         pageObject.chooseMultipleID(destination,SELECT_DESTINATION);
     }
     public void chooseVisaDate(String date){
-        pageObject.typeOn(INPUT_DATE, date);
+        pageObject.submitText(INPUT_DATE, date);
     }
     public void submitButton(){
         pageObject.clickOn(SUBMIT_BUTTON);
